@@ -1,0 +1,61 @@
+generated: '2026-10-21'
+method: derived
+source: the pre-flight dossier, apis.yml pointers, spec servers, well-known, vendors -- nothing fetched here
+generator: derive-hosts.py
+summary:
+  hosts: 4
+  own: 2
+  other_domain: 1
+  platform: 1
+  roles:
+  - api
+  - community
+  - other
+  - website
+hosts:
+- host: api.com.au
+  found_by:
+  - contract-discovery
+  types: []
+  serves: []
+  registrable_domain: api.com.au
+  role: api
+  relation: other-domain
+- host: au.linkedin.com
+  found_by:
+  - pointer
+  types:
+  - LinkedIn
+  serves: []
+  registrable_domain: linkedin.com
+  role: other
+  relation: platform
+- host: beachenergy.com.au
+  found_by:
+  - pointer
+  - probed
+  - contract-discovery
+  - well-known
+  types:
+  - Website
+  - PrivacyPolicy
+  - Newsroom
+  - Support
+  - Careers
+  serves: []
+  registrable_domain: beachenergy.com.au
+  role: website
+  relation: own
+- host: engage.beachenergy.com.au
+  found_by:
+  - pointer
+  - probed
+  - site-links
+  - contract-discovery
+  - well-known
+  types:
+  - Community
+  serves: []
+  registrable_domain: beachenergy.com.au
+  role: community
+  relation: own

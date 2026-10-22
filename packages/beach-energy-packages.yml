@@ -1,0 +1,16 @@
+generated: '2026-10-21'
+method: none
+name: Beach Energy packages
+note: No first-party SDK, client library or CLI found. Beach Energy (ASX-listed oil and gas producer) publishes no developer portal or API documentation; npm search for "beach energy" returned only unrelated packages, PyPI has no beach-energy project (404), GitHub repository search found no Beach Energy org or API repo, and /developer/, /developers/, /api/, /docs/ on beachenergy.com.au all return 404.
+checked:
+- url: https://registry.npmjs.org/-/v1/search?text=beach%20energy&size=5
+  status: 200
+- url: https://pypi.org/pypi/beach-energy/json
+  status: 404
+- url: https://api.github.com/search/repositories?q=beach+energy+api
+  status: 200
+- url: https://beachenergy.com.au/developers/
+  status: 404
+- url: https://beachenergy.com.au/api/
+  status: 404
+packages: []

@@ -1,23 +1,90 @@
 aid: beach-energy
+
 name: Beach Energy
-description: 'Beach Energy is a company surfaced via the API Evangelist harvest backlog (source: australia-apidays-2026)
-  and added to the network as a stub for full-pipeline profiling.'
+
+description: Beach Energy is an ASX-listed oil and natural gas exploration and production company headquartered in Adelaide, South Australia, with operations in the Cooper Basin, Perth Basin, Bass Basin, Otway Basin and Taranaki Basin (New Zealand). Its public website, beachenergy.com.au, covers its operations, key projects (such as Waitsia Gas Project Stage 2 and Moomba CCS), investor information, sustainability reporting and media releases, and it runs a community engagement site at engage.beachenergy.com.au. No public developer portal or API documentation was found on its own site.
+
 url: https://raw.githubusercontent.com/api-evangelist/beach-energy/refs/heads/main/apis.yml
+
 x-type: company
+
 x-source: harvest:australia-apidays-2026
-x-tier: stub
-x-tier-reason: harvest
+
+x-tier: profiled
+x-tier-reason: enrichment pass 2026-10-21 (modular-v1; was harvest)
+
 specificationVersion: '0.20'
+
 created: '2026-10-21'
+
 modified: '2026-10-21'
+
 tags:
 - Company
-apis: []
+- Energy
+- Oil and Gas
+- Natural Gas
+- Exploration and Production
+- Australia
+- ASX Listed
+- Carbon Capture and Storage
+
 maintainers:
 - FN: Kin Lane
   email: kin@apievangelist.com
 - FN: APIs.json
   email: info@apis.io
+
+image: https://beachenergy.com.au/wp-content/uploads/2018/10/cropped-Kupe-Aerial-from-Sea.jpg
+
 common:
+- type: SecurityTxt
+  url: well-known/beach-energy-engage-security.txt
+- type: WellKnown
+  url: well-known/beach-energy-well-known.yml
+- type: Hosts
+  url: hosts/beach-energy-hosts.yml
+- type: DomainSecurity
+  url: security/beach-energy-domain-security.yml
 - type: Website
   url: https://beachenergy.com.au/
+- type: PrivacyPolicy
+  url: https://beachenergy.com.au/privacy-policy/
+- type: Newsroom
+  url: https://beachenergy.com.au/media/
+- type: Support
+  url: https://beachenergy.com.au/contact-us/
+- type: Careers
+  url: https://beachenergy.com.au/work-at-beach-energy/
+- type: Community
+  url: https://engage.beachenergy.com.au/
+- type: LinkedIn
+  url: https://au.linkedin.com/company/beach-energy-ltd
+
+apis: []
+
+x-coverage:
+  state: covered
+  reason: identity-verified
+  detail: Website beachenergy.com.au verified (title and meta description name Beach Energy); no developer portal, API docs, terms of service, or GitHub org published on the site.
+  evidence:
+  - url: https://beachenergy.com.au/
+    status: 200
+  - url: https://beachenergy.com.au/privacy-policy/
+    status: 200
+  - url: https://beachenergy.com.au/media/
+    status: 200
+  - url: https://beachenergy.com.au/contact-us/
+    status: 200
+  - url: https://beachenergy.com.au/work-at-beach-energy/
+    status: 200
+  - url: https://engage.beachenergy.com.au/
+    status: 200
+  - url: https://au.linkedin.com/company/beach-energy-ltd
+    status: 200
+x-enrichment:
+  date: '2026-10-21'
+  status: enriched
+  artifacts_added: 10
+  pass: modular-v1
+  engine: identity=anthropic,contract=anthropic,surfaces=anthropic,docs=anthropic,regulatory=anthropic

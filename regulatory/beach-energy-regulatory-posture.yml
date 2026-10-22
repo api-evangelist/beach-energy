@@ -1,0 +1,48 @@
+generated: '2026-10-21'
+method: searched
+probe: true
+source: https://beachenergy.com.au/privacy-policy/
+signals:
+  data_subject_request:
+    url: https://beachenergy.com.au/privacy-policy/
+    section: '8. Access to, Updating and Correcting Personal Information'
+    channel: Company Secretary, (08) 8338 2833 or info@beachenergy.com.au
+    rights_named: [access, update, correction]
+    escalation: Office of the Australian Information Commissioner
+    evidence:
+    - source: https://beachenergy.com.au/privacy-policy/
+      http_status: 200
+      fetched: '2026-10-21'
+      quote: 'An individual can seek access to, and update or correct, any personal information that is being held by Beach about that individual by contacting the Company Secretary at (08) 8338 2833 or info@beachenergy.com.au.'
+    - source: https://beachenergy.com.au/privacy-policy/
+      http_status: 200
+      fetched: '2026-10-21'
+      quote: 'At the request of an individual, Beach will, in most circumstances, provide access to an individual to any personal information that is being held by Beach about that individual.'
+    note: >-
+      Australian Privacy Principles access and correction rights, requested through the Company Secretary.
+      Access can be refused in some circumstances, and Beach says it will give its reasons. No response time
+      is stated, and the policy names no deletion or portability right. Section 11 sends unresolved complaints
+      to the OAIC.
+  data_retention:
+    url: https://beachenergy.com.au/privacy-policy/
+    section: '7. Security of Personal Information'
+    evidence:
+    - source: https://beachenergy.com.au/privacy-policy/
+      http_status: 200
+      fetched: '2026-10-21'
+      quote: 'Beach will also take reasonable steps to ensure that personal information it holds that is no longer necessary for the disclosed purpose is destroyed or permanently de-identified, subject to any legal obligation to keep the personal information for any required period of time.'
+    note: >-
+      A purpose-limited retention principle: information is destroyed or de-identified once it is no longer
+      needed. The policy gives no retention periods or schedule.
+  data_residency:
+    url: https://beachenergy.com.au/privacy-policy/
+    section: '4. Cross-Border Disclosures'
+    evidence:
+    - source: https://beachenergy.com.au/privacy-policy/
+      http_status: 200
+      fetched: '2026-10-21'
+      quote: 'Beach is unlikely to disclose personal information to overseas recipients. However, as Beach has subsidiaries in other countries, it is possible that Beach may disclose information to recipients that are located outside Australia. Beach may disclose personal information to overseas contractors, and may use offshore servers for the purpose of data storage.'
+    note: >-
+      Beach makes no commitment to keep data in Australia. It says data may go to overseas recipients and
+      be stored on offshore servers, with only "commercially reasonable steps" to keep it consistent with
+      the APPs. No regions are named.
